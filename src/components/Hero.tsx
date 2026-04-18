@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, MapPin, Zap } from "lucide-react";
 import heroImg from "@/assets/radar-hero.jpg";
+import phoneImg from "@/assets/radar-phone.png";
 
 export const Hero = () => {
   return (
@@ -69,8 +70,11 @@ export const Hero = () => {
         <div className="relative hidden lg:flex justify-center items-center">
           <div className="absolute inset-0 bg-radar opacity-60" />
           <img
-            src="/src/assets/radar-phone.png"
+            src={phoneImg}
             alt="Tela do Radar App"
+            loading="lazy"
+            width={800}
+            height={800}
             className="relative w-full max-w-md animate-float drop-shadow-2xl"
             style={{ filter: 'drop-shadow(0 0 60px hsl(var(--primary) / 0.6))' }}
           />
